@@ -420,4 +420,19 @@
       var ok = document.getElementById('form-ok'); if (ok) ok.hidden = false;
     });
   }
+
+  /* ---- hero device screens pan slowly; counters roll up when seen ---- */
+  if (!reduce && 'IntersectionObserver' in window){
+    var panIO = new IntersectionObserver(function(es){ es.forEach(function(e){ e.target.classList.toggle('go', e.isIntersecting); }); }, { threshold: 0.2 });
+    document.querySelectorAll('.dv-pan').forEach(function(el){ panIO.observe(el); });
+    var fmt = function(v, dec){ return v.toFixed(dec).replace(/\B(?=(\d{3})+(?!\d))/g, ','); };
+    var cIO = new IntersectionObserver(function(es){ es.forEach(function(e){
+      if (!e.isIntersecting) return; cIO.unobserve(e.target);
+      var el = e.target, to = parseFloat(el.dataset.count), dec = (el.dataset.count.split('.')[1] || '').length, t0 = null;
+      var tick = function(t){ if (!t0) t0 = t; var k = Math.min(1, (t - t0) / 1800), ease = 1 - Math.pow(1 - k, 3);
+        el.textContent = fmt(to * ease, dec); if (k < 1) requestAnimationFrame(tick); };
+      el.textContent = fmt(0, dec); requestAnimationFrame(tick);
+    }); }, { threshold: 0.6 });
+    document.querySelectorAll('[data-count]').forEach(function(el){ cIO.observe(el); });
+  }
 })();
