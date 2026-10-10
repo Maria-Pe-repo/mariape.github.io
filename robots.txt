@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mariape-github-io.pe-marialourdesp.workers.dev/sitemap.xml
+Sitemap: https://mariape.co/sitemap.xml

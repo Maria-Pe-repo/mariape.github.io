@@ -1,12 +1,12 @@
 # Maria Pe website
 
 Maria Pe's freelance portfolio and services site (Freelance Web & Content Consultant). Hosted on Cloudflare as a Worker named `mariape-github-io`, connected to this repo and configured by `wrangler.jsonc` (static assets; `.assetsignore` keeps repo files like CLAUDE.md off the site). Every push to `main` deploys in a minute or two.
-Live address until the custom domain is added: https://mariape-github-io.pe-marialourdesp.workers.dev
+Live address: https://mariape.co (custom domain; the old workers.dev address https://mariape-github-io.pe-marialourdesp.workers.dev still works as a backup).
 
 ## Search files
 - `sitemap.xml` lists every page with absolute URLs. Add a line when a page is added, and update `lastmod` when a page changes meaningfully.
 - `robots.txt` allows all crawlers, including AI search bots. Keep it that way; Maria sells AI search visibility.
-- When the custom domain goes live, replace `https://mariape-github-io.pe-marialourdesp.workers.dev` in both files.
+- Both files use https://mariape.co. If the domain ever changes, update both.
 
 ## How the site is built
 - Plain HTML, CSS and a little JavaScript. No build step, no framework.
