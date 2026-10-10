@@ -416,7 +416,7 @@
         + 'Country: ' + (d.get('country')||'') + '\n'
         + 'Interested in: ' + (d.getAll('service').join(', ')||'Not sure yet') + '\n\n'
         + (d.get('message')||'');
-      window.location.href = 'mailto:pe.marialourdesp@gmail.com?subject=' + encodeURIComponent('Free homepage mock-up: ' + (d.get('business')||'')) + '&body=' + encodeURIComponent(body);
+      window.location.href = 'mailto:hello@mariape.co?subject=' + encodeURIComponent('Free homepage mock-up: ' + (d.get('business')||'')) + '&body=' + encodeURIComponent(body);
       var ok = document.getElementById('form-ok'); if (ok) ok.hidden = false;
     });
   }
