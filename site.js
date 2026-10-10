@@ -460,3 +460,18 @@
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(build); else build();
   }
 })();
+
+/* blog filters: real buttons, shown only when JavaScript runs */
+(function(){
+  var bar = document.querySelector('[data-filters]'); if (!bar) return;
+  var items = document.querySelectorAll('.blog-list [data-cat]'), status = document.querySelector('.filter-status');
+  bar.hidden = false;
+  bar.addEventListener('click', function(e){
+    var b = e.target.closest('button[data-f]'); if (!b) return;
+    bar.querySelectorAll('button[data-f]').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    var f = b.getAttribute('data-f'), n = 0;
+    items.forEach(function(el){ var show = f === 'all' || (' ' + el.getAttribute('data-cat') + ' ').indexOf(' ' + f + ' ') > -1;
+      el.hidden = !show; if (show){ n++; el.classList.add('in'); } });
+    if (status) status.textContent = 'Showing ' + n + (n === 1 ? ' article' : ' articles');
+  });
+})();
