@@ -921,3 +921,5 @@ mark.todo{background:#FFE7A3;color:#3B2A00;padding:1px 6px;border-radius:4px;fon
 .feat-g .nope li::before{content:'\2715';color:var(--quiet);flex:none}
 @media (max-width:420px){.feat-g .fg{grid-template-columns:1fr}}
 .feat-g li{border:0;padding:0;background:none;border-radius:0}
+.wm-spark{display:inline-block;width:.24em;height:.24em;margin-left:.08em;fill:var(--accent-hi);vertical-align:.02em}
+@media (max-width:900px){header a.wm[href="./"],footer a.wm[href="./"]{display:inline-block;line-height:44px}}
