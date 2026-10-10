@@ -909,3 +909,14 @@ mark.todo{background:#FFE7A3;color:#3B2A00;padding:1px 6px;border-radius:4px;fon
 .byline{flex-wrap:nowrap}
 .byline .who{min-width:0}
 .phero.art .crumbs > *{flex:none;max-width:100%}
+.feat-g .fg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.feat-g .fg > div{border:1px solid var(--line);border-radius:10px;padding:16px}
+.feat-g .fg-h{font-size:11px;color:var(--accent-hi);margin-bottom:12px}
+.feat-g .fg-h.no{color:var(--quiet)}
+.feat-g ul{list-style:none;display:grid;gap:10px;font-size:14px;line-height:1.35}
+.feat-g li{display:flex;gap:9px;align-items:baseline}
+.feat-g .yes li{color:var(--ink)}
+.feat-g .yes li::before{content:'\2713';color:var(--accent-hi);flex:none}
+.feat-g .nope li{color:var(--muted)}
+.feat-g .nope li::before{content:'\2715';color:var(--quiet);flex:none}
+@media (max-width:420px){.feat-g .fg{grid-template-columns:1fr}}
