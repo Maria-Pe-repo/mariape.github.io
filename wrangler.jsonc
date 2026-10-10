@@ -1,0 +1,8 @@
+{
+  // Cloudflare Workers config: serves this folder as a static site.
+  "name": "mariape-github-io",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./"
+  }
+}

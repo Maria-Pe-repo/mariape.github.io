@@ -1,6 +1,6 @@
 # Maria Pe website
 
-Maria Pe's freelance portfolio and services site (Freelance Web & Content Consultant). Planned host: Cloudflare Pages connected to this repo (project name `mariape`, address https://mariape.pages.dev until a custom domain is added). Every push to `main` goes live in a minute or two.
+Maria Pe's freelance portfolio and services site (Freelance Web & Content Consultant). Hosted on Cloudflare as a Worker named `mariape-github-io`, connected to this repo and configured by `wrangler.jsonc` (static assets; `.assetsignore` keeps repo files like CLAUDE.md off the site). Every push to `main` deploys in a minute or two.
 
 ## Search files
 - `sitemap.xml` lists every page with absolute URLs. Add a line when a page is added, and update `lastmod` when a page changes meaningfully.
