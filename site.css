@@ -821,7 +821,7 @@ html.head-hidden:has(.jump) .pin-steps.is-pinned .pin-stage{top:54px}
 .filters button[aria-pressed="true"]{background:var(--ink-d);border-color:var(--ink-d);color:var(--paper)}
 .filter-status{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .post-meta{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:13px;color:var(--muted-d)}
-.post-meta .dot{opacity:.6}
+.post-meta .sep{opacity:.6}
 a.post{text-decoration:none;color:inherit}
 .post .link{margin-top:auto;padding-top:8px}
 .post-feat{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);padding:clamp(28px,3.5vw,48px);margin-bottom:20px;align-items:center;min-height:0}
@@ -920,3 +920,4 @@ mark.todo{background:#FFE7A3;color:#3B2A00;padding:1px 6px;border-radius:4px;fon
 .feat-g .nope li{color:var(--muted)}
 .feat-g .nope li::before{content:'\2715';color:var(--quiet);flex:none}
 @media (max-width:420px){.feat-g .fg{grid-template-columns:1fr}}
+.feat-g li{border:0;padding:0;background:none;border-radius:0}
