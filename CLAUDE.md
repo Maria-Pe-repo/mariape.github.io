@@ -1,6 +1,11 @@
 # Maria Pe website
 
-Maria Pe's freelance portfolio and services site (Freelance Web & Content Consultant). Live on GitHub Pages from the `main` branch, root folder. Every push to `main` goes live in a minute or two.
+Maria Pe's freelance portfolio and services site (Freelance Web & Content Consultant). Planned host: Cloudflare Pages connected to this repo (project name `mariape`, address https://mariape.pages.dev until a custom domain is added). Every push to `main` goes live in a minute or two.
+
+## Search files
+- `sitemap.xml` lists every page with absolute URLs. Add a line when a page is added, and update `lastmod` when a page changes meaningfully.
+- `robots.txt` allows all crawlers, including AI search bots. Keep it that way; Maria sells AI search visibility.
+- When the custom domain goes live, replace `https://mariape.pages.dev` in both files.
 
 ## How the site is built
 - Plain HTML, CSS and a little JavaScript. No build step, no framework.

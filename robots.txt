@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mariape.pages.dev/sitemap.xml
