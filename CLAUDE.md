@@ -33,5 +33,4 @@ Live address: https://mariape.co (custom domain; the old workers.dev address htt
 - Tell Maria in plain words what changed. Push to `main` only when she asks for it to go live.
 
 ## Known open items
-- Work page, By the numbers: organic traffic stat is a [SOURCE NEEDED] placeholder. Maria to say which client, what +24.9% and +50 measure, and the period. Must be filled or removed before going live.
 - Contact form opens the visitor's email app (mailto). There is no form backend.
