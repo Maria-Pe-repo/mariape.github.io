@@ -806,3 +806,7 @@ html.head-hidden:has(.jump) .pin-steps.is-pinned .pin-stage{top:54px}
 .sys-show figcaption h3{font-size:clamp(1.8rem,2.6vw,2.3rem)}
 .sys-show figcaption p{color:var(--muted);max-width:520px}
 @media (max-width:860px){.sys-show{grid-template-columns:1fr}}
+
+/* statement: lines light up one by one while scrolling (JS adds .by-line) */
+.statement .fill.by-line{background:none;-webkit-background-clip:border-box;background-clip:border-box;animation:none;color:var(--ink)}
+.statement .fill.by-line .hl{display:block;--k:0;color:rgba(237,231,223,calc(.2 + .8 * var(--k)));transition:color .25s linear}
